@@ -1,0 +1,222 @@
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background-color: #d604cc;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #0d47a1;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Sections */
+
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #1565c0;
+    text-align: center;
+}
+
+/* Booking Form */
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+
+button {
+    background-color: #1976d2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+form button {
+    width: 100%;
+}
+
+/* Booking Cards */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px #ccc;
+}
+
+.card h3 {
+    color: #1565c0;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #1976d2;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Fare Table */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1976d2;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #e3f2fd;
+}
+
+/* Seat Selection */
+
+#seats {
+    text-align: center;
+}
+
+.seat-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    gap: 15px;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.seat-layout label {
+    background-color: #c8e6c9;
+    padding: 12px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat-layout label:has(input:checked) {
+    background-color: #66bb6a;
+}
+
+.seat-layout input {
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .seat-layout {
+        grid-template-columns: repeat(4, 55px);
+        gap: 8px;
+    }
+}
