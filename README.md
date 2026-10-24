@@ -1,4 +1,4 @@
-Author
+
 Challa Radha Sahithi
 CSE 1 --- Section 16
 Roll Number: 26000014
