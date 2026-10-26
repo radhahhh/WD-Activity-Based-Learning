@@ -25,7 +25,6 @@ confirmation are not connected to a live booking system.
 Technologies Used
 - HTML5 --- structures the web pages
 - CSS3 --- styles page layouts, colors, and visual elements
-- JavaScript --- listed as a learning topic for the shopping
   project; the presentation does not specify its exact functionality
 Getting Started
 1. Download or clone the project repository.
